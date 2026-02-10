@@ -211,7 +211,7 @@ let allChannels = [];
 let currentList = [];
 let currentIndex = 0;
 
-fetch('./channels.m3u')
+fetch('./channels.json')
   .then(r => r.json())
   .then(data => {
     allChannels = data;
